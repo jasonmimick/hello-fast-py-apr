@@ -1,3 +1,4 @@
+uvicorn
 pymongo[tls]
 dnspython
 fastapi
