@@ -1,0 +1,7 @@
+# After installing your requirements:
+RUN opentelemetry-bootstrap -a install
+
+# Launch via opentelemetry-instrument — reads all OTEL_* env vars automatically.
+# No changes to your application code needed.
+CMD ["opentelemetry-instrument", "python", "-m", "hello-fast-py-apr"]
+# or: CMD ["opentelemetry-instrument", "uvicorn", "main:app", "--host", "0.0.0.0"]
