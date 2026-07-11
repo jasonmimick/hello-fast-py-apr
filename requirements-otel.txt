@@ -1,0 +1,6 @@
+# Zero-code OTel instrumentation — no setup.py, no manual SDK wiring.
+# opentelemetry-distro pulls in api + sdk + instrumentation CLI.
+# opentelemetry-bootstrap scans your installed packages and adds the
+# matching auto-instrumentation libraries (FastAPI, requests, SQLAlchemy, etc.)
+opentelemetry-distro>=0.45b0
+opentelemetry-exporter-otlp-proto-http>=1.24.0
